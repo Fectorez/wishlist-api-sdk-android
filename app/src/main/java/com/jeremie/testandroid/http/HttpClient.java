@@ -2,8 +2,6 @@ package com.jeremie.testandroid.http;
 
 import android.os.AsyncTask;
 
-import org.json.JSONException;
-
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
 

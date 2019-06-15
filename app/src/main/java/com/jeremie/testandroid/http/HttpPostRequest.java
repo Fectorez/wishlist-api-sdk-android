@@ -1,11 +1,6 @@
 package com.jeremie.testandroid.http;
 
-import android.icu.text.StringSearch;
 import android.os.AsyncTask;
-import android.util.Log;
-
-import org.json.JSONArray;
-import org.json.JSONException;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
@@ -67,6 +62,7 @@ public class HttpPostRequest extends HttpRequest {
         StringBuilder stringBuilder = new StringBuilder();
         int i = 0;
         int nb = paramsMap.size();
+
         for ( Map.Entry<String, String> entry : paramsMap.entrySet() ) {
             stringBuilder.append(URLEncoder.encode(entry.getKey(), UTF_8));
             stringBuilder.append("=");
@@ -74,6 +70,7 @@ public class HttpPostRequest extends HttpRequest {
             if ( i++ < nb - 1 )
                 stringBuilder.append("&");
         }
+
         return stringBuilder.toString();
     }
 

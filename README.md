@@ -1,7 +1,14 @@
 # wishlist-api-sdk-android
 Librairie client de l'API pour Androïd
 
-1 modèle = 1 classe + 1 API  
+1 modèle = 1 classe + 1 API
+
+## Avant exécution
+- La machine sur laquelle est exécutée le back (Sails) doit être sur le même réseau que le client Androïd (tous les deux connectés à la même box)
+- Récupérer l'adresse ipv4 de cette machine (exemple : 192.168.1.10)
+- Dans le code du SDK Androïd, aller dans ApiConfig et assigner l'URL du serveur avec le port de Sails (par défaut 1337) : `public static final String BASE_URL = "http://192.168.1.10:1337";`
+- Lancer le serveur Sails JS
+- Lancer le client Androïd
 
 ## Méthodes
 - `public List<T> findAll()`

@@ -1,7 +1,5 @@
 package com.jeremie.testandroid.model;
 
-import android.util.Log;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,7 +29,6 @@ public class Category extends Model {
                 this.fans = new ArrayList<>(nbFans);
                 for ( int i = 0 ; i < nbFans ; i++ ) {
                     JSONObject fanJson = (JSONObject) (fansJson.get(i));
-                    Log.i("GET_TAG", "fanJson="+fanJson);
                     User fan = new User(fanJson, false);
                     this.fans.add(fan);
                 }

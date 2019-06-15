@@ -1,7 +1,5 @@
 package com.jeremie.testandroid.api;
 
-import android.util.Log;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 

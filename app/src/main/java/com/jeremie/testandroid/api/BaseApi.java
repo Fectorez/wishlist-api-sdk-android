@@ -1,8 +1,6 @@
 package com.jeremie.testandroid.api;
-import android.util.Log;
 
 import com.jeremie.testandroid.http.HttpClient;
-import com.jeremie.testandroid.model.Category;
 import com.jeremie.testandroid.model.Model;
 
 import org.json.JSONArray;

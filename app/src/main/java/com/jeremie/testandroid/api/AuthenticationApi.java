@@ -1,7 +1,5 @@
 package com.jeremie.testandroid.api;
 
-import android.util.Log;
-
 import com.jeremie.testandroid.ApiConfig;
 import com.jeremie.testandroid.http.HttpClient;
 
